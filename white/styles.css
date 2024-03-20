@@ -1,0 +1,36 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.text-animation {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: none;
+}
+
+#scp-logo {
+  max-width: 100px; /* Modifier la taille du logo selon vos besoins */
+  animation: rotation 3s; /* Animation de rotation pendant 3 secondes, en boucle */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); /* Rotation de départ du logo */
+  }
+  to {
+    transform: rotate(360deg); /* Rotation complète du logo (360 degrés) */
+  }
+}
